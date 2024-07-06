@@ -7,9 +7,9 @@ public class Main {
         System.out.println("Digite o valor de n:");
         int n = scanner.nextInt();
 
-        String result = getFactorial(n) + "";
+        int result = getFactorial(n);
 
-        System.out.println("O ultimo digito do fatorial de " + n + " é " + result.charAt(result.length()-1));
+        System.out.println("O ultimo digito do fatorial de " + n + " é " + result % 10);
     }
 
     public static int getFactorial(int n) {
